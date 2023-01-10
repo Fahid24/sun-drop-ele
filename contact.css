@@ -1,0 +1,162 @@
+.contact-section {
+  position: relative;
+  background: #32c36c;
+  padding: 280px 90px;
+  overflow: visible !important;
+}
+ul {
+  list-style: none;
+}
+.contact-us {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+
+  top: -200px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.contact-support > h4 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.contact-text {
+  display: grid;
+  gap: 35px;
+}
+.contact-logo {
+  display: grid;
+  gap: 10px;
+}
+.support-list > li {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.contact-logo > p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 457px;
+}
+.address-input {
+  border: 0.5px solid #000000;
+  border-radius: 6px;
+  width: 438px;
+  height: 60px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 40px;
+}
+
+.emil-input {
+  border: 0.5px solid #000000;
+  border-radius: 6px;
+  width: 438px;
+  height: 60px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 40px;
+}
+
+.number-input {
+  border: 0.5px solid #000000;
+  border-radius: 6px;
+  width: 438px;
+  height: 60px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 40px;
+}
+.radio-wrapper {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form {
+  display: grid;
+  justify-content: center;
+  gap: 20px;
+}
+.form-button {
+  margin-top: 20px;
+  cursor: pointer;
+  max-width: 100%;
+  margin-top: 10px;
+  padding: 20px 20px;
+  width: 90%;
+  color: white;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  background-color: #35c36e;
+  justify-self: center;
+}
+
+.radio {
+  accent-color: #32c36c;
+}
+@media (max-width: 768px) {
+  .contact-section {
+    background: #32c36c;
+    padding: 200px 20px;
+  }
+  .contact-text {
+    display: none;
+  }
+  .contact-us {
+    margin-left: auto;
+    margin-right: auto;
+    left: 30px;
+    padding: 30px;
+  }
+  .address-input {
+    border: 0.5px solid #000000;
+    border-radius: 6px;
+    width: 100%;
+    max-height: 60px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 40px;
+  }
+
+  .emil-input {
+    border: 0.5px solid #000000;
+    border-radius: 6px;
+    width: 100%;
+    max-height: 60px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 40px;
+  }
+
+  .number-input {
+    border: 0.5px solid #000000;
+    border-radius: 6px;
+    width: 100%;
+    max-height: 60px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 40px;
+  }
+
+  .form-button {
+    width: 150%;
+  }
+}

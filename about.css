@@ -1,0 +1,215 @@
+.about-hero {
+  background-image: url("./images/about-bg.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  backdrop-filter: brightness(0.3);
+  color: white;
+}
+
+.white-shap {
+  position: absolute;
+}
+.sub-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-sud {
+  max-width: 740px;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.about-title {
+  font-weight: 700;
+  font-size: 64px;
+}
+
+.about-hero-text {
+  filter: brightness(1);
+
+  padding: 300px 608px 100px 92px;
+  display: grid;
+  justify-items: start;
+}
+
+.service-button {
+  filter: brightness(1);
+
+  font-weight: 500;
+  font-size: 24px;
+  cursor: pointer;
+  max-width: fit-content;
+  margin-top: 10px;
+  padding: 20px 30px;
+  width: 90%;
+  background: #35c36e;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+}
+
+.about-section {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 80px;
+  margin-top: 50px;
+  padding: 50px 120px;
+}
+
+.about-text {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+}
+
+.about-text > h2 {
+  max-width: 540px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  text-align: start;
+}
+
+.color-text {
+  color: #f68d1d;
+}
+
+.about-text > p {
+  max-width: 677px;
+  font-weight: 400;
+  font-size: 20.5px;
+  line-height: 36px;
+  text-align: initial;
+}
+.about-text > p > br {
+  display: none;
+}
+
+.plan-wrapper {
+  color: white;
+  padding: 30px 85px;
+  display: flex;
+  justify-content: space-between;
+  gap: 140px;
+  background: #35c36e;
+  border-radius: 10px;
+}
+.plan > p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+  text-align: center;
+}
+
+.go-section {
+  padding: 80px 160px;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .white-shap {
+    position: absolute;
+    max-width: 350px;
+  }
+  .about-sud {
+    max-width: 740px;
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  .about-title {
+    font-weight: 700;
+    font-size: 40px;
+  }
+  .about-hero-text {
+    padding: 150px 10px 30px 10px;
+    justify-items: center;
+    text-align: center;
+  }
+  .sub-wrapper > img {
+    display: none;
+  }
+  .plan-wrapper {
+    display: grid;
+    background: none;
+    gap: 30px;
+  }
+
+  .plan > p {
+    color: black;
+  }
+  .about-section {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    gap: 25px;
+    margin-top: 50px;
+    padding: 50px 0;
+  }
+  .about-text > p > br {
+    display: inline;
+  }
+  .about-text {
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .about-text > h1 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #32c36c;
+  }
+
+  .about-text > h2 {
+    font-weight: bolder;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .color-text {
+    color: #f68d1d;
+  }
+
+  .about-text > p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .plan > h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #39b54a;
+  }
+
+  .plan > p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+
+    text-align: center;
+  }
+
+  .go-section {
+    margin-top: 120px;
+    padding: 110px 32px 60px 32px;
+    background-color: white;
+  }
+}
