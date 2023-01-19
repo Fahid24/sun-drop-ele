@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sunDrop electrical</title>
+    <title>sunDrop electrical - Home</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="./images/icon.png" type="image/icon">
     <link
       href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montagu+Slab:opsz@16..144&family=Poppins:wght@300&display=swap"
       rel="stylesheet"
@@ -21,11 +22,11 @@
     <header>
       <nav class="nav-bar">
         
-        <img src="./images/nab-icon.png" />
+        <img class="nab-bar-logo" src="./images/nab-icon.png" />
         <ul class="nav-items">
           <li class="item"><a href="index.html">Home</a></li>
           <li class="item"><a href="about.html">About Us</a></li>
-          <li class="contact"><a href="contact.html">Contact Us</a></li>
+          <li class="contact"><a style="color: white;" href="contact.html">Contact Us</a></li>
         </ul>
         <div class="hamburger">
           <span class="bar"></span>
@@ -40,10 +41,9 @@
       <section class="hero">
         <div class="hero-text-wrapper">
           <div class="title-wrapper">
-            <h3 class="hero-subtitle">NEW YEAR SALE</h3>
+            <h3 class="hero-subtitle ">AUSTRALIA DAY SALE</h3>
             <h1 class="hero-main-title">
-              Grab the Biggest <span> 6.6kW </span> Solar Deal Starting at Just
-              $3399
+              Start Saving on electricity bills with <span>6.6kW Solar Deals.</span> Starting from <span>$3499 or $22/week</span>
             </h1>
           </div>
           <ul class="hero-items">
@@ -54,7 +54,8 @@
             <li class="hero-item">In-house Installation Team</li>
             <li class="hero-item">Short Turnaround Period</li>
           </ul>
-          <button id="button" class="hero-button">Get A Free Quote Now</button>
+          <a href="contact.html"><button  id="button" class="hero-button">Get A Free Quote Now</button></a>
+
         </div>
         <div class="img-wrapper">
           <img src="./images/Group 77.png" alt="" />
@@ -83,11 +84,15 @@
       <section id="how-work" class="work">
         <div class="work-hero">
           <div class="work-text">
-            <h1>how does your solar system work?</h1>
-          <p>Sunlight is converted into electricity through the use of photovoltaic (PV) solar panels. These panels contain a special material that produces an electrical current when exposed to sunlight, which is then converted into usable electricity. In order to get the most out of your system, it’s important to understand how this process works and what kind of setup is best for your individual needs.</p>
+            <h1>How dose solar system works?</h1>
+          <p>Sunlight is converted into electricity through the use of photovoltaic (PV) solar panels. These panels contains a special material called semiconductors that produces an electrical current when exposed to sunlight, which is then converted into usable electricity. In order to get the most out of your system, it’s important to understand how this process works and what kind of setup is best for your individual needs.</p>
           </div>
-          <img src="./images/video.png" alt="">
-        </div>
+          <video class="video" poster="./images/Screenshot (230).png" controls 
+          >
+            <source src="https://firebasestorage.googleapis.com/v0/b/blogs-5ed75.appspot.com/o/files%2F20230119-200959-555.MP4?alt=media&token=d3e0ad8c-21cf-49e7-8f7a-299d399172b8"
+            type="video/mp4">
+          </video>       
+     </div>
         <div class="work-list">
           <div class="work-card"><img src="./images/Bank Interest.png" alt=""><p>Interest Free Finance</p></div>
           <div class="work-card"><img src="./images/Money Dollar File.png" alt=""><p>Huge Saving on Bills</p></div>
@@ -124,7 +129,7 @@
           <p>An efficiently run solar energy system needs on-going maintenance, repairs, fault identification and rectifications throughout its life span. Hence, having a reliable and excellent post install support for your solar solution can ensure maximum performance and efficiency at all times.</p>
           </div>
           
-         <a href="">EXPLORE MORE</a>
+          
         </div>
       </section>
 
@@ -133,10 +138,23 @@
   <div class="faq-container">
       <div class="faq active">
           <h3 class="faq-title">
-              Why we shouldn't we trust atoms?
+            How dose your solar works?
           </h3>
           <p class="faq-text">
-              They make up everything
+            Answer: Solar power can be a great way to save money and reduce your environmental impact. In Western Australia, solar panels can be easily set up on your roof to produce electricity during the day that is used to power your home. During the night, any excess electricity generated will be sent back into the grid, generating a credit towards future energy bills. Furthermore, in Western Australia you may be eligible for government rebates which would help offset some of the cost of setting up a solar system.</p>
+          <button class="faq-toggle">
+              <i class="fas fa-chevron-down"></i>
+              <i class="fas fa-times"></i>
+          </button>
+      </div>
+
+
+      <div class="faq">
+          <h3 class="faq-title">
+            Which solar panels are best in Australia?
+          </h3>
+          <p class="faq-text">
+            Answer: When it comes to solar panels in Australia, the best choice depends on your location and budget. Monocrystalline solar panels are typically more expensive than polycrystalline panels but offer slightly better efficiency. Hybrid and thin-film technology may be better options if you have a small roof or limited space. Ultimately, there is no single "best" solar panel for all applications in Australia, so it's important to do research and compare various models before making a purchase.
           </p>
           <button class="faq-toggle">
               <i class="fas fa-chevron-down"></i>
@@ -147,10 +165,10 @@
 
       <div class="faq">
           <h3 class="faq-title">
-              Why do you call someone with no body and no nose?
+            Which inverter is best for solar system in Australia?
           </h3>
           <p class="faq-text">
-              Nobody knows.
+            Answer: The best solar inverters for Australian homes are those that are reliable, efficient, and cost-effective. Look for inverters with features such as dual MPPT (maximum power point tracking) to maximize solar energy production, smart meter compatibility and advanced monitoring technologies to ensure the system runs at peak performance.
           </p>
           <button class="faq-toggle">
               <i class="fas fa-chevron-down"></i>
@@ -161,10 +179,10 @@
 
       <div class="faq">
           <h3 class="faq-title">
-              What's the object oriented way to become wealthy?
+            How solar system can save money on electricity bills in WA?
           </h3>
           <p class="faq-text">
-              inheritance.
+            Answer: Installing solar panels for your home in WA can significantly reduce your electricity bills. By utilizing the energy of the sun and converting it into clean, renewable energy, you will be able to generate your own power and save money on energy costs. Additionally, many utility companies offer tax incentives and rebates to solar users as an incentive to switch over to clean sources of energy.
           </p>
           <button class="faq-toggle">
               <i class="fas fa-chevron-down"></i>
@@ -175,24 +193,10 @@
 
       <div class="faq">
           <h3 class="faq-title">
-              HOw many tickles it takes to tickle an actopus?
+            How to get maximum out of your solar system?
           </h3>
           <p class="faq-text">
-              Ten-ticklles!
-          </p>
-          <button class="faq-toggle">
-              <i class="fas fa-chevron-down"></i>
-              <i class="fas fa-times"></i>
-          </button>
-      </div>
-
-
-      <div class="faq">
-          <h3 class="faq-title">
-              What is 1 + 1?
-          </h3>
-          <p class="faq-text">
-              Depends on who are you asking.
+            Answer: To maximize your solar system benefits, try to use energy during the day when your energy production is at a peak. During the day when your panels are exposed to sunlight, the amount of energy your system produces will be significantly higher than in the evening and early morning hours. By using appliances that require more energy during the day, you’ll be able to get maximum out of your solar system.
           </p>
           <button class="faq-toggle">
               <i class="fas fa-chevron-down"></i>
@@ -213,16 +217,16 @@
       <section class="brand-section">
         <h1>Brands We Install</h1>
         <p>Our solar installation services feature the highest quality solar panels and inverters for outstanding performance and reliability.</p>
-        <div>
-          <img src="./images/fronius-1-logo-png-transparent.png" alt="">
-          <img src="./images/logo2.png" alt="">
-          <img src="./images/jinko.svg" alt="">
-          <img src="./images/fronius-1-logo-png-transparent 1.png" alt="">
-          <img src="./images/logo2 1.png" alt="">
-          <img src="./images/jinko.svg" alt="">
-          <img src="./images/fronius-1-logo-png-transparent 1.png" alt="">
-          <img src="./images/logo2 1.png" alt="">
-          <img src="./images/jinko.svg" alt="">
+        <div class="slider">
+         <div class="slider-track">
+          <img class="slide" src="./images/fronius-1-logo-png-transparent.png" alt="">
+          <img class="slide" src="./images/logo2.png" alt="">
+          <img class="slide" src="./images/brand4.png" alt="">
+          <img class="slide" src="./images/brang5.png" alt="">
+          <img class="slide" src="./images/brand6.png" alt="">
+          <img class="slide" src="./images/brand7.png" alt="">
+         
+         </div>
           
         </div>
       </section>
@@ -233,7 +237,8 @@
             <h1><span class="go-color">Go Solar</span> <br>
               With sundrop </h1>
             <p>Connecting WA to solar Energy</p>
-            <button class="go-solar-button">GET A FREE QUOTE NOW</button>
+
+            <a href="contact.html"><button class="go-solar-button">GET A FREE QUOTE NOW</button></a>
           </div>
         </div>
       </section>
@@ -241,42 +246,50 @@
      
     </main>
     <footer class="">
-     <div class="footer">
-      <div class="footer-logo">
-        <img class="flogo" src="./images/nab-icon.png" alt="">
-        <p>SunDrop Electricals is a proudly Western Australia owned and operated solar energy company offering energy solutions to residential and commercial customers.</p>
-        <div class="social1">
-          <img src="./images/Facebook logo 2019.png" alt="">
-          <img src="./images/Instagram.png" alt="">
-        </div>
+      <div class="footer">
+        <div class="footer-logo">
+          <img class="flogo" src="./images/nab-icon.png" alt="" />
+          <p>
+            SunDrop Electricals is a proudly Western Australia owned and
+            operated solar energy company offering energy solutions to
+            residential and commercial customers.
+          </p>
+          <div class="social1">
+            <a href="https://www.facebook.com/profile.php?id=100068052934199&mibextid=LQQJ4d"><img src="./images/Facebook logo 2019.png" alt="" /></a>
 
+            <a><img src="./images/Instagram.png" alt="" /></a>
+          </div>
+        </div>
+        <div class="footer-logo">
+          <h3>Company</h3>
+          <a style="color: white" href="about.html"><p style="font-size: 18px; font-weight: 300;">About Us</p></a>
+          <a style="color: white" href="contact.html"><p style="font-size: 18px; font-weight: 300;">Contact Us</p></a>
+        </div>
+        <div class="footer-logo">
+          <h3>Services</h3>
+          <p>Residential Solar Installation</p>
+          <p>Commercial Solar Installation</p>
+          <p>battery Solutions</p>
+        </div>
+        <div class="footer-logo">
+          <h3>Support</h3>
+          <p>1800 957 962</p>
+          <p>+61 470 782 482</p>
+          <p>info@sundropelectricals.com.au</p>
+          <p>53 Burswood Rd, Burswood WA 6100</p>
+        </div>
+        <div class="footer-logo">
+          <div class="social">
+            <a href="https://www.facebook.com/profile.php?id=100068052934199&mibextid=LQQJ4d"><img src="./images/Facebook logo 2019.png" alt="" /></a>
+            <a><img
+              src="./images/Instagram.png"
+              alt=""
+            /></a>
+          </div>
+          <p>© 2023 SunDrop Electricals. All Rights Reserved.</p>
+        </div>
       </div>
-      <div class="footer-logo">
-        <h3>Company</h3>
-        <a href="about.html"><p style="font-size: 18px; font-weight: 300;">About Us</p></a>
-        <a href="about.html"><p style="font-size: 18px; font-weight: 300;">Contact Us</p></a>
-        <p>Terms and conditions</p>
-      </div>
-      <div class="footer-logo">
-        <h3>Services</h3>
-        <p>Residential Solar Installation</p>
-        <p>Commercial Solar Installation</p>
-        <p>battery Solutions</p>
-      </div>
-      <div class="footer-logo">
-        <h3>Support</h3>
-        <p>1800 957 962</p>
-        <p>+61 470 782 482
-        </p>
-        <p>info@sundropelectricals.com.au</p>
-        <p>53 Burswood Rd, Burswood WA 6100</p>
-      </div>
-      <div class="footer-logo">
-        <div class="social"><img src="./images/Facebook logo 2019.png" alt=""><img src="./images/Instagram.png" alt=""></div>
-        <p>© 2023 SunDrop Electricals. All Rights Reserved.</p>
-      </div>
-     </div>
-     <p>© 2023 SunDrop Electricals. All Rights Reserved.</p>
+      <p>© 2023 SunDrop Electricals. All Rights Reserved.</p>
     </footer>
  <script src="index.js"></script>
 

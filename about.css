@@ -1,9 +1,12 @@
 .about-hero {
-  background-image: url("./images/about-bg.jpeg");
+  background-image: url("./images/about-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  backdrop-filter: brightness(0.3);
+  color: white;
+}
+
+.home {
   color: white;
 }
 
@@ -21,11 +24,13 @@
   max-width: 740px;
   font-weight: 400;
   font-size: 24px;
+  text-shadow: 2px 2px 8px black;
 }
 
 .about-title {
   font-weight: 700;
   font-size: 64px;
+  text-shadow: 2px 2px 8px black;
 }
 
 .about-hero-text {
@@ -33,6 +38,7 @@
 
   padding: 300px 608px 100px 92px;
   display: grid;
+  gap: 35px;
   justify-items: start;
 }
 
@@ -44,12 +50,11 @@
   cursor: pointer;
   max-width: fit-content;
   margin-top: 10px;
-  padding: 20px 30px;
+  padding: 17px 50px;
   width: 90%;
   background: #35c36e;
   border-radius: 20px;
-  font-weight: 700;
-  font-size: 14px;
+
   color: white;
 }
 
@@ -116,24 +121,40 @@
 }
 
 @media (max-width: 768px) {
+  .about-hero {
+    background: url("./images/about-bg-mobile.jpg") 0 0 / cover;
+  }
+  .service-button {
+    max-width: 100%;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 20px;
+  }
+  .home {
+    color: black;
+  }
   .white-shap {
     position: absolute;
-    max-width: 350px;
+    max-width: 400px;
   }
   .about-sud {
     max-width: 740px;
     font-weight: 400;
     font-size: 24px;
+    max-width: 430px;
+    text-shadow: 2px 2px 8px black;
   }
 
   .about-title {
     font-weight: 700;
     font-size: 40px;
+    text-shadow: 2px 2px 8px black;
   }
   .about-hero-text {
-    padding: 150px 10px 30px 10px;
+    padding: 300px 10px 100px 10px;
     justify-items: center;
     text-align: center;
+    gap: 20px;
   }
   .sub-wrapper > img {
     display: none;
