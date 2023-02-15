@@ -5,7 +5,6 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
-
   font-family: "Indie Flower", cursive;
   font-family: "Montagu Slab", serif;
   font-family: "Poppins", sans-serif;
@@ -126,7 +125,7 @@ a {
   }
 
   a {
-    font-weight: 600;
+    font-weight: 500;
   }
   .nav-items.active {
     left: 0;
@@ -144,23 +143,25 @@ a {
   }
 }
 .hero {
-  background-image: url("./images/home-hero-background.jpg");
+  background: linear-gradient(
+      180deg,
+      #ffffff 42.88%,
+      rgba(255, 140, 0, 0.42) 100%
+    ),
+    url("./images/Ellipse\ 63.png");
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100%;
-
-  display: flex;
-  align-items: center;
-  padding: 75px 50px;
+  background-position: bottom left;
+  background-size: 100%, 850px;
+  height: 130vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 75px 20px 20px 120px;
 }
 
 .hero-text-wrapper {
-  margin-top: 140px;
   display: grid;
   align-content: center;
   justify-items: start;
-  gap: 40px;
-  overflow: hidden;
 }
 
 .hero-subtitle {
@@ -172,12 +173,12 @@ a {
 
 .title-wrapper {
   display: grid;
-  gap: 0px;
+  gap: 20px;
 }
 
 .hero-main-title {
-  font-weight: 700;
-  font-size: 48px;
+  font-weight: 600;
+  font-size: 32px;
   line-height: 150%;
 }
 
@@ -191,8 +192,10 @@ span {
   margin-left: 35px;
   list-style: none;
   display: grid;
-  font-weight: 600;
-  font-size: 26px;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 34px;
+  letter-spacing: 0.02em;
 }
 
 .hero-items .hero-item::before {
@@ -204,14 +207,53 @@ span {
   width: 1em;
   margin-left: -1em;
 }
-.hero-button {
-  padding: 10px 100px;
-  background: #32c36c;
-  border-radius: 10px;
-  font-weight: 600;
-  font-size: 34px;
+
+.hero-button-wrapper {
+  display: flex;
+  gap: 50px;
+  margin-top: -60px;
+  align-items: flex-end;
+  grid-column: 1 / span 2;
+}
+
+.hero-button-wrapper2 > h1 {
+  font-weight: 800;
+  font-size: 66px;
+  /* identical to box height */
+  text-align: center;
+
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+}
+
+.hero-button-wrapper2 > h1 > span {
+  font-size: 18px;
+  font-weight: 500;
   color: white;
+  margin-left: 10px;
+}
+
+.hero-button-wrapper2 > p {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 28px;
+  text-align: start;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.hero-button {
+  margin-bottom: 20px;
+  padding: 10px 60px;
+  background: white;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
   cursor: pointer;
+  border-radius: 50px;
+  bottom: 40px;
 }
 
 .shape {
@@ -228,25 +270,29 @@ span {
     }
   }
   .hero {
-    background-image: url("./images/home-hreo-bg-ios.jpg");
-
-    padding: 60px 30px;
-    background-size: 300%;
+    margin-top: 90px;
+    padding: 60px 30px 0 30px;
+    display: flex;
+    background-size: 100%, 750px;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    gap: 20px;
+    gap: 50px;
+    height: auto;
   }
 
   .hero > img {
     max-width: 300px;
   }
   .title-wrapper {
+    display: flex;
+
+    flex-direction: column-reverse;
     gap: 10px;
   }
   .hero-main-title {
     font-weight: bolder;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 150%;
   }
   .hero-subtitle {
@@ -265,14 +311,23 @@ span {
     text-align: left;
   }
 
+  .hero-button-wrapper {
+    margin-top: 0;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .hero-button-wrapper2 > h1 {
+    font-size: 50px;
+  }
   .hero-button {
-    display: none;
     padding: 10px 60px;
-    background: #32c36c;
-    border-radius: 10px;
+    background: white;
+    background: white;
     font-weight: 500;
-    font-size: 14px;
-    color: white;
+    font-size: 18px;
     justify-self: center;
   }
 
@@ -299,6 +354,11 @@ span {
     right: 0;
     text-align: center;
   }
+
+  .hero-button-wrapper2 > h1 {
+    font-size: 32px;
+    padding: 10px 0;
+  }
 }
 
 .review-section {
@@ -316,13 +376,35 @@ span {
   gap: 90px;
 }
 
+.why-points {
+  list-style: none;
+  margin: 0;
+  overflow-x: visible;
+  justify-self: start;
+  margin-top: -50px;
+  padding: 0 50px;
+}
+
+.why-points li i {
+  overflow-x: visible;
+}
+
+.why-points > li {
+  color: white;
+  padding: 10px 0;
+  font-size: 22px;
+  display: flex;
+  gap: 20px;
+}
 .why-section > h1 {
   max-width: 824px;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 34px;
   line-height: 48px;
-  text-align: center;
+  text-align: start;
   color: white;
+  justify-self: start;
+  padding: 0 50px;
 }
 
 .why-section > p {
@@ -336,6 +418,7 @@ span {
   color: white;
 }
 .why-card {
+  overflow-x: visible;
   background: white;
   box-shadow: 0px 4px 100px rgba(255, 255, 255, 0.05);
   border-radius: 20px;
@@ -347,6 +430,7 @@ span {
 .why-cards-wrapper {
   display: grid;
   justify-items: center;
+  overflow-x: visible;
   grid-template-columns: repeat(2, 2fr);
   gap: 65px;
   padding: 0 30px;
@@ -429,20 +513,26 @@ span {
   display: flex;
   gap: 50px;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
 }
 
 .logo-g {
-  max-width: 200px;
+  max-width: 100px;
 }
 
 .logo-c {
-  max-width: 300px;
+  max-width: 120px;
 }
 .img-wrapper {
-  margin-top: 150px;
+  margin-top: 35px;
+  margin-bottom: -60px;
   display: grid;
+  align-self: center;
   justify-items: center;
+}
+
+.img-wrapper > img {
+  max-width: 500px;
 }
 .wrapper1 {
   position: absolute;
@@ -528,10 +618,12 @@ span {
 }
 
 .go-solar-secton {
+  overflow: visible;
   padding: 80px 160px;
   background-color: white;
 }
 .go-solar {
+  overflow-x: visible;
   padding: 30px 0px 35px 80px;
   background: #35c36e;
   border-radius: 16px;
@@ -662,6 +754,11 @@ footer {
   .video {
     max-width: 300px;
   }
+
+  .why-points {
+    margin-top: -20px;
+    padding: 0 20px;
+  }
   .why-section > h1 {
     max-width: 400px;
     padding: 0 20px;
@@ -669,7 +766,7 @@ footer {
     font-size: 23px;
     line-height: 48px;
     color: white;
-    text-align: center;
+    text-align: start;
   }
   .why-section > p {
     margin-top: -10px;
@@ -702,8 +799,7 @@ footer {
   .logos-wrapper {
     display: flex;
     justify-content: center;
-    margin-top: -30px;
-    margin-left: 30px;
+    gap: 20px;
   }
   .img-wrapper {
     display: grid;
@@ -719,7 +815,7 @@ footer {
   }
 
   .logo-c {
-    max-width: 200px;
+    max-width: 150px;
   }
   .wrapper1 {
     max-width: 100px;
@@ -1048,7 +1144,7 @@ footer {
 
 .slider {
   display: grid;
-  margin-top: 50px;
+  margin-top: 10px;
   align-content: center;
   justify-items: center;
   overflow: hidden;
